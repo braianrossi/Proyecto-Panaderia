@@ -8,11 +8,11 @@ namespace Proyecto_Panaderia.Entidades
 {
     internal class Productos
     {
-        public Productos(int id, string name, string description)
+        public Productos(int id, string description,double precio)
         {
             this.id = id;
-            this.name = name;
             this.description = description;
+            this.precio = precio;
 
         }
 
@@ -23,8 +23,8 @@ namespace Proyecto_Panaderia.Entidades
 
 
         public int id { get; set; } 
-        public string name { get; set; }
         public string description { get; set;}
+        public double precio { get; set; }
         public List<Productos> Producto {  get; set; }
 
         public void AgregarProducto(Productos prod)
@@ -34,6 +34,12 @@ namespace Proyecto_Panaderia.Entidades
         public void QuitarProducto(int indice)
         {
             Producto.RemoveAt(indice);
+        }
+
+
+        public override string ToString()
+        {
+            return "ID: "+ id +" | Precio: "+ precio + " | Producto: " + description ;
         }
     }
 }

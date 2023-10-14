@@ -48,10 +48,10 @@
   <ItemGroup>
     <Compile Include="Datos\DBHelper.cs" />
     <Compile Include="Entidades\Productos.cs" />
-    <Compile Include="Formularios\NuevoProducto.cs">
+    <Compile Include="Formularios\Productos\NuevoProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\NuevoProducto.Designer.cs">
+    <Compile Include="Formularios\Productos\NuevoProducto.Designer.cs">
       <DependentUpon>NuevoProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Principal.cs">
@@ -60,13 +60,22 @@
     <Compile Include="Formularios\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Ventas\NuevaVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ventas\NuevaVenta.Designer.cs">
+      <DependentUpon>NuevaVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\NuevoProducto.resx">
+    <EmbeddedResource Include="Formularios\Productos\NuevoProducto.resx">
       <DependentUpon>NuevoProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ventas\NuevaVenta.resx">
+      <DependentUpon>NuevaVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
