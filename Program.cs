@@ -1,6 +1,4 @@
-﻿using Proyecto_Panaderia.Formularios;
-using Proyecto_Panaderia.Formularios.Ventas;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,7 +16,7 @@ namespace Proyecto_Panaderia
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NuevaVenta());
+            Application.Run(new Principal());
         }
     }
 }

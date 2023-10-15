@@ -32,25 +32,29 @@
             this.lblProducto = new System.Windows.Forms.Label();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.lblTotal = new System.Windows.Forms.Label();
-            this.txtTotal = new System.Windows.Forms.TextBox();
             this.lblDescuento = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSubTotal = new System.Windows.Forms.TextBox();
             this.lblSubTotal = new System.Windows.Forms.Label();
             this.dgvGrilla = new System.Windows.Forms.DataGridView();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtCliente = new System.Windows.Forms.TextBox();
             this.ColId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColAccion = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.txtDescuento = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.btnCalcularTotal = new System.Windows.Forms.Button();
+            this.txtDescuentoPP = new System.Windows.Forms.TextBox();
+            this.lblDescuentoPP = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.btnImprimir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,28 +93,11 @@
             this.txtCantidad.Size = new System.Drawing.Size(109, 20);
             this.txtCantidad.TabIndex = 3;
             // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(659, 531);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(65, 20);
-            this.lblTotal.TabIndex = 5;
-            this.lblTotal.Text = "Total:  $";
-            // 
-            // txtTotal
-            // 
-            this.txtTotal.Location = new System.Drawing.Point(730, 531);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(109, 20);
-            this.txtTotal.TabIndex = 6;
-            // 
             // lblDescuento
             // 
             this.lblDescuento.AutoSize = true;
             this.lblDescuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescuento.Location = new System.Drawing.Point(1068, 606);
+            this.lblDescuento.Location = new System.Drawing.Point(1080, 553);
             this.lblDescuento.Name = "lblDescuento";
             this.lblDescuento.Size = new System.Drawing.Size(105, 20);
             this.lblDescuento.TabIndex = 7;
@@ -130,7 +117,7 @@
             // btnAceptar
             // 
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(477, 714);
+            this.btnAceptar.Location = new System.Drawing.Point(418, 714);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(92, 33);
             this.btnAceptar.TabIndex = 10;
@@ -140,7 +127,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(601, 714);
+            this.btnCancelar.Location = new System.Drawing.Point(564, 714);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(92, 33);
             this.btnCancelar.TabIndex = 11;
@@ -158,22 +145,22 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // textBox1
+            // txtSubTotal
             // 
-            this.textBox1.Location = new System.Drawing.Point(1179, 648);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(109, 20);
-            this.textBox1.TabIndex = 14;
+            this.txtSubTotal.Location = new System.Drawing.Point(1191, 631);
+            this.txtSubTotal.Name = "txtSubTotal";
+            this.txtSubTotal.Size = new System.Drawing.Size(109, 20);
+            this.txtSubTotal.TabIndex = 14;
             // 
             // lblSubTotal
             // 
             this.lblSubTotal.AutoSize = true;
             this.lblSubTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubTotal.Location = new System.Drawing.Point(1079, 648);
+            this.lblSubTotal.Location = new System.Drawing.Point(1091, 631);
             this.lblSubTotal.Name = "lblSubTotal";
-            this.lblSubTotal.Size = new System.Drawing.Size(94, 20);
+            this.lblSubTotal.Size = new System.Drawing.Size(77, 20);
             this.lblSubTotal.TabIndex = 13;
-            this.lblSubTotal.Text = "Sub Total: $";
+            this.lblSubTotal.Text = "Sub Total";
             // 
             // dgvGrilla
             // 
@@ -192,40 +179,6 @@
             this.dgvGrilla.Size = new System.Drawing.Size(854, 394);
             this.dgvGrilla.TabIndex = 4;
             this.dgvGrilla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGrilla_CellContentClick);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(1179, 606);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(109, 20);
-            this.textBox3.TabIndex = 15;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 25);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Nueva venta | Nro de venta: ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(690, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(197, 25);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Nombre del cliente:";
-            // 
-            // txtCliente
-            // 
-            this.txtCliente.Location = new System.Drawing.Point(893, 12);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(395, 20);
-            this.txtCliente.TabIndex = 18;
             // 
             // ColId
             // 
@@ -264,24 +217,117 @@
             this.ColAccion.UseColumnTextForButtonValue = true;
             this.ColAccion.Width = 150;
             // 
+            // txtDescuento
+            // 
+            this.txtDescuento.Location = new System.Drawing.Point(1191, 553);
+            this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.Size = new System.Drawing.Size(109, 20);
+            this.txtDescuento.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(285, 25);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Nueva venta | Nro de venta: ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(690, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(197, 25);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Nombre del cliente:";
+            // 
+            // txtCliente
+            // 
+            this.txtCliente.Location = new System.Drawing.Point(893, 12);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(407, 20);
+            this.txtCliente.TabIndex = 18;
+            // 
+            // btnCalcularTotal
+            // 
+            this.btnCalcularTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcularTotal.Location = new System.Drawing.Point(1084, 504);
+            this.btnCalcularTotal.Name = "btnCalcularTotal";
+            this.btnCalcularTotal.Size = new System.Drawing.Size(216, 33);
+            this.btnCalcularTotal.TabIndex = 19;
+            this.btnCalcularTotal.Text = "Calcular total";
+            this.btnCalcularTotal.UseVisualStyleBackColor = true;
+            this.btnCalcularTotal.Click += new System.EventHandler(this.btnCalcularTotal_Click_1);
+            // 
+            // txtDescuentoPP
+            // 
+            this.txtDescuentoPP.Location = new System.Drawing.Point(1191, 605);
+            this.txtDescuentoPP.Name = "txtDescuentoPP";
+            this.txtDescuentoPP.Size = new System.Drawing.Size(109, 20);
+            this.txtDescuentoPP.TabIndex = 21;
+            // 
+            // lblDescuentoPP
+            // 
+            this.lblDescuentoPP.AutoSize = true;
+            this.lblDescuentoPP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescuentoPP.Location = new System.Drawing.Point(1091, 605);
+            this.lblDescuentoPP.Name = "lblDescuentoPP";
+            this.lblDescuentoPP.Size = new System.Drawing.Size(87, 20);
+            this.lblDescuentoPP.TabIndex = 20;
+            this.lblDescuentoPP.Text = "Descuento";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(1124, 577);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(44, 20);
+            this.lblTotal.TabIndex = 22;
+            this.lblTotal.Text = "Total";
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.Location = new System.Drawing.Point(1191, 579);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(109, 20);
+            this.txtTotal.TabIndex = 23;
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.Location = new System.Drawing.Point(719, 714);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(181, 33);
+            this.btnImprimir.TabIndex = 24;
+            this.btnImprimir.Text = "Imprimir factura";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            // 
             // NuevaVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1312, 759);
+            this.ClientSize = new System.Drawing.Size(1378, 765);
+            this.Controls.Add(this.btnImprimir);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.txtDescuentoPP);
+            this.Controls.Add(this.lblDescuentoPP);
+            this.Controls.Add(this.btnCalcularTotal);
             this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDescuento);
+            this.Controls.Add(this.txtSubTotal);
             this.Controls.Add(this.lblSubTotal);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.lblDescuento);
-            this.Controls.Add(this.txtTotal);
-            this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.dgvGrilla);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.lblCantidad);
@@ -289,7 +335,7 @@
             this.Controls.Add(this.cboProducto);
             this.Name = "NuevaVenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "NUEVA VENTA";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.NuevaVenta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).EndInit();
             this.ResumeLayout(false);
@@ -303,17 +349,15 @@
         private System.Windows.Forms.Label lblProducto;
         private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label lblDescuento;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSubTotal;
         private System.Windows.Forms.Label lblSubTotal;
         private System.Windows.Forms.DataGridView dgvGrilla;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtDescuento;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCliente;
@@ -322,5 +366,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPrecio;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColCantidad;
         private System.Windows.Forms.DataGridViewButtonColumn ColAccion;
+        private System.Windows.Forms.Button btnCalcularTotal;
+        private System.Windows.Forms.TextBox txtDescuentoPP;
+        private System.Windows.Forms.Label lblDescuentoPP;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Button btnImprimir;
     }
 }

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,8 @@ namespace Proyecto_Panaderia.Formularios.Ventas
             txtCliente.Text = "CONSUMIDOR FINAL";
             txtCantidad.Text = "1";
             cboProducto.SelectedIndex = 0;
-            txtTotal.Text = "0";
+            txtDescuento.Text = "0";
+            txtSubTotal.Text = "0";
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -61,6 +63,16 @@ namespace Proyecto_Panaderia.Formularios.Ventas
                 return;
             }
 
+            foreach (DataGridViewRow Row in dgvGrilla.Rows)
+            {
+                if (Row.Cells["ColProducto"].Value.ToString() == cboProducto.Text)
+                {
+                    MessageBox.Show("Este producto ya esta elegido!", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+                
+            }
+
             DataRowView item = (DataRowView)cboProducto.SelectedItem;
 
             int codigo = Convert.ToInt32(item.Row.ItemArray[0]);
@@ -69,27 +81,7 @@ namespace Proyecto_Panaderia.Formularios.Ventas
             int cantidad = Convert.ToInt32(txtCantidad.Text);
 
 
-            dgvGrilla.Rows.Add(new object[] { codigo, producto, precio, cantidad });
-
-            ActualizarPrecio();
-
-        }
-
-        private void ActualizarPrecio()
-        {
-            Double TotalAnterior = Convert.ToDouble(txtTotal.Text); 
-
-            DataRowView item = (DataRowView)cboProducto.SelectedItem;
-
-            double precio = Convert.ToDouble(item.Row.ItemArray[1]);
-            int cantidad = Convert.ToInt32(txtCantidad.Text);
-
-            double Total = precio * cantidad;
-
-            TotalAnterior = Total + TotalAnterior;
-
-            txtTotal.Text = TotalAnterior.ToString() ;
-            //Solucionar esto con un for o forech para que de vuelta dentro de la grilla y asi me actualice el precio al eliminar algun producto
+            dgvGrilla.Rows.Add(new object[] { codigo, producto, precio, cantidad });            
 
         }
 
@@ -98,24 +90,57 @@ namespace Proyecto_Panaderia.Formularios.Ventas
             if (dgvGrilla.CurrentCell.ColumnIndex == 4)
             {
                 dgvGrilla.Rows.RemoveAt(dgvGrilla.CurrentRow.Index);
-            }
-            RestarPrecio();
+            }            
         }
 
-        private void RestarPrecio()
+        private void btnCalcularTotal_Click_1(object sender, EventArgs e)
         {
-            Double TotalAnterior = Convert.ToDouble(txtTotal.Text);
+            txtSubTotal.Text = string.Empty;
 
-            DataRowView item = (DataRowView)cboProducto.SelectedItem;
+            if (txtDescuento.Text == " " || txtDescuento.Text == string.Empty)
+            {
+                MessageBox.Show("Ponga un descuento porfavor = 0!", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (dgvGrilla.Rows.Count < 1)
+            {
+                MessageBox.Show("Porfavor elija un producto para comprar!", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
 
-            double precio = Convert.ToDouble(item.Row.ItemArray[1]);
-            int cantidad = Convert.ToInt32(txtCantidad.Text);
+            double total = CalcularTotal();
+            double descuento = total * (Convert.ToDouble(txtDescuento.Text) / 100);
+            
+            txtTotal.Text = total.ToString();
 
-            double Total = precio * cantidad;
+            if (txtDescuento.Text == "0")
+            {
+                txtDescuentoPP.Text = "0";
+                txtSubTotal.Text = total.ToString();
+            }
+            else 
+            {
+                txtDescuentoPP.Text = descuento.ToString();
+                txtSubTotal.Text = (total - descuento).ToString();
+            }
 
-            TotalAnterior = TotalAnterior - Total;
+            
+        }
 
-            txtTotal.Text = TotalAnterior.ToString();
+        private double CalcularTotal()
+        {
+            double total = 0;
+
+            foreach (DataGridViewRow Row in dgvGrilla.Rows)
+            {
+                double precio = Convert.ToDouble(Row.Cells["ColPrecio"].Value);
+                int cantidad = Convert.ToInt32(Row.Cells["ColCantidad"].Value);
+
+                total += precio * cantidad;
+
+            }
+
+            return total;
         }
     }
 }
