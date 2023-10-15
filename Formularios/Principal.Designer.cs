@@ -156,6 +156,7 @@
             this.lstProductos.Name = "lstProductos";
             this.lstProductos.Size = new System.Drawing.Size(628, 354);
             this.lstProductos.TabIndex = 2;
+            this.lstProductos.SelectedIndexChanged += new System.EventHandler(this.lstProductos_SelectedIndexChanged);
             // 
             // lblListaProductos
             // 
@@ -177,6 +178,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Principal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Principal_Load);
             this.menuStrip1.ResumeLayout(false);

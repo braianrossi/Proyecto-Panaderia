@@ -67,11 +67,11 @@ namespace Proyecto_Panaderia
                 lProductos.Add(p);
                 lstProductos.Items.Add(p);
             }
-
         }
 
+        private void lstProductos_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 }
