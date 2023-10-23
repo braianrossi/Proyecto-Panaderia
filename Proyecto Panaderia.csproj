@@ -49,6 +49,12 @@
     <Compile Include="Datos\DBHelper.cs" />
     <Compile Include="Entidades\Parametros.cs" />
     <Compile Include="Entidades\Productos.cs" />
+    <Compile Include="Formularios\ActualizarProducto\ActualizarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ActualizarProducto\ActualizarProducto.Designer.cs">
+      <DependentUpon>ActualizarProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Productos\NuevoProducto.cs">
       <SubType>Form</SubType>
     </Compile>

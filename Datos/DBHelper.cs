@@ -18,8 +18,6 @@ namespace Proyecto_Panaderia.Datos
             conexion = new SqlConnection("Data Source=localhost;Initial Catalog=Panaderia;Integrated Security=True");
         }
 
-
-
         public DataTable Consultar(string nombre)
         {
             conexion.Open();
@@ -34,8 +32,6 @@ namespace Proyecto_Panaderia.Datos
             conexion.Close();
             return tabla;
         }
-
-
 
         public int actualizarBD(string consultaSQL, List<Parametros> lParametros)
         {
@@ -54,6 +50,5 @@ namespace Proyecto_Panaderia.Datos
             conexion.Close();
             return filasAfectadas;
         }
-
     }
 }

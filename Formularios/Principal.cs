@@ -1,6 +1,7 @@
 ﻿using Proyecto_Panaderia.Datos;
 using Proyecto_Panaderia.Entidades;
 using Proyecto_Panaderia.Formularios;
+using Proyecto_Panaderia.Formularios.ActualizarProducto;
 using Proyecto_Panaderia.Formularios.Ventas;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,7 @@ namespace Proyecto_Panaderia
     {
         DBHelper dbHelper;
         List<Productos> lProductos;
+
         public Principal()
         {
             InitializeComponent();
@@ -45,8 +47,7 @@ namespace Proyecto_Panaderia
         private void actualizarListaDeProductosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ListaProductos(); //Aca para actualizar la lista de precios en el FRM principal
-        }     
-        
+        }        
 
         private void ListaProductos()
         {
@@ -60,18 +61,19 @@ namespace Proyecto_Panaderia
                 Productos p = new Productos();
 
                 p.id = Convert.ToInt32(tabla.Rows[i][0]);
+                p.nombre = tabla.Rows[i][3].ToString();
                 p.precio = Convert.ToInt32(tabla.Rows[i][1]);
                 p.description = tabla.Rows[i][2].ToString();
-                
 
                 lProductos.Add(p);
                 lstProductos.Items.Add(p);
             }
         }
 
-        private void lstProductos_SelectedIndexChanged(object sender, EventArgs e)
+        private void actualizarProductoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ActualizarProducto act = new ActualizarProducto();
+            act.Show();
         }
     }
 }
