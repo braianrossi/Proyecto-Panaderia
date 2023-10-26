@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NuevoProducto));
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -43,115 +44,73 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(1070, 138);
+            resources.ApplyResources(this.btnAgregar, "btnAgregar");
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(76, 36);
-            this.btnAgregar.TabIndex = 3;
-            this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(988, 619);
+            resources.ApplyResources(this.btnCancelar, "btnCancelar");
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(76, 36);
-            this.btnCancelar.TabIndex = 5;
-            this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalir
             // 
-            this.btnSalir.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(1070, 619);
+            resources.ApplyResources(this.btnSalir, "btnSalir");
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(76, 36);
-            this.btnSalir.TabIndex = 6;
-            this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // txtNombreProducto
             // 
-            this.txtNombreProducto.Location = new System.Drawing.Point(211, 70);
+            resources.ApplyResources(this.txtNombreProducto, "txtNombreProducto");
             this.txtNombreProducto.Name = "txtNombreProducto";
-            this.txtNombreProducto.Size = new System.Drawing.Size(555, 20);
-            this.txtNombreProducto.TabIndex = 0;
             // 
             // lblNombre
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(12, 65);
+            resources.ApplyResources(this.lblNombre, "lblNombre");
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(156, 23);
-            this.lblNombre.TabIndex = 4;
-            this.lblNombre.Text = "Nombre del producto";
             // 
             // lblDescripcion
             // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(76, 106);
+            resources.ApplyResources(this.lblDescripcion, "lblDescripcion");
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(92, 23);
-            this.lblDescripcion.TabIndex = 6;
-            this.lblDescripcion.Text = "Descripcion";
             // 
             // txtDescripcionProductoNuevo
             // 
-            this.txtDescripcionProductoNuevo.Location = new System.Drawing.Point(211, 112);
+            resources.ApplyResources(this.txtDescripcionProductoNuevo, "txtDescripcionProductoNuevo");
             this.txtDescripcionProductoNuevo.Name = "txtDescripcionProductoNuevo";
-            this.txtDescripcionProductoNuevo.Size = new System.Drawing.Size(555, 20);
-            this.txtDescripcionProductoNuevo.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(530, 32);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(236, 23);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "AGREGAR PRODUCTO NUEVO";
             // 
             // lstProductosNuevaVenta
             // 
             this.lstProductosNuevaVenta.BackColor = System.Drawing.Color.PapayaWhip;
-            this.lstProductosNuevaVenta.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lstProductosNuevaVenta, "lstProductosNuevaVenta");
             this.lstProductosNuevaVenta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lstProductosNuevaVenta.FormattingEnabled = true;
-            this.lstProductosNuevaVenta.ItemHeight = 25;
-            this.lstProductosNuevaVenta.Location = new System.Drawing.Point(12, 184);
             this.lstProductosNuevaVenta.Name = "lstProductosNuevaVenta";
-            this.lstProductosNuevaVenta.Size = new System.Drawing.Size(1134, 429);
-            this.lstProductosNuevaVenta.TabIndex = 11;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(211, 154);
+            resources.ApplyResources(this.txtPrecio, "txtPrecio");
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(555, 20);
-            this.txtPrecio.TabIndex = 2;
             // 
             // lblPrecio
             // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(114, 151);
+            resources.ApplyResources(this.lblPrecio, "lblPrecio");
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(54, 23);
-            this.lblPrecio.TabIndex = 13;
-            this.lblPrecio.Text = "Precio";
             // 
             // NuevoProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1165, 662);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lstProductosNuevaVenta);
@@ -163,9 +122,10 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAgregar);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.KeyPreview = true;
             this.Name = "NuevoProducto";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "NUEVO PRODUCTO";
+            this.ShowInTaskbar = false;
             this.Load += new System.EventHandler(this.NuevoProducto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

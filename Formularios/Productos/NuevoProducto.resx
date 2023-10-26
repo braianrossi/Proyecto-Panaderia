@@ -117,4 +117,358 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAgregar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 12pt</value>
+  </data>
+  <data name="btnAgregar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1217, 249</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnAgregar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 6, 5, 6</value>
+  </data>
+  <data name="btnAgregar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 66</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnAgregar.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnAgregar.Text" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="&gt;&gt;btnAgregar.Name" xml:space="preserve">
+    <value>btnAgregar</value>
+  </data>
+  <data name="&gt;&gt;btnAgregar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAgregar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnAgregar.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btnCancelar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 12pt</value>
+  </data>
+  <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1646, 1143</value>
+  </data>
+  <data name="btnCancelar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 6, 5, 6</value>
+  </data>
+  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 66</value>
+  </data>
+  <data name="btnCancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnCancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Name" xml:space="preserve">
+    <value>btnCancelar</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnSalir.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 12pt</value>
+  </data>
+  <data name="btnSalir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1784, 1143</value>
+  </data>
+  <data name="btnSalir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 6, 5, 6</value>
+  </data>
+  <data name="btnSalir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 66</value>
+  </data>
+  <data name="btnSalir.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnSalir.Text" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Name" xml:space="preserve">
+    <value>btnSalir</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtNombreProducto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 129</value>
+  </data>
+  <data name="txtNombreProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 6, 5, 6</value>
+  </data>
+  <data name="txtNombreProducto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>923, 30</value>
+  </data>
+  <data name="txtNombreProducto.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtNombreProducto.Name" xml:space="preserve">
+    <value>txtNombreProducto</value>
+  </data>
+  <data name="&gt;&gt;txtNombreProducto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNombreProducto.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtNombreProducto.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblNombre.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblNombre.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 14.25pt</value>
+  </data>
+  <data name="lblNombre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 130</value>
+  </data>
+  <data name="lblNombre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 0, 5, 0</value>
+  </data>
+  <data name="lblNombre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 29</value>
+  </data>
+  <data name="lblNombre.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblNombre.Text" xml:space="preserve">
+    <value>Nombre del producto</value>
+  </data>
+  <data name="&gt;&gt;lblNombre.Name" xml:space="preserve">
+    <value>lblNombre</value>
+  </data>
+  <data name="&gt;&gt;lblNombre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNombre.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblNombre.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblDescripcion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDescripcion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 14.25pt</value>
+  </data>
+  <data name="lblDescripcion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 208</value>
+  </data>
+  <data name="lblDescripcion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 0, 5, 0</value>
+  </data>
+  <data name="lblDescripcion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="lblDescripcion.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblDescripcion.Text" xml:space="preserve">
+    <value>Descripcion</value>
+  </data>
+  <data name="&gt;&gt;lblDescripcion.Name" xml:space="preserve">
+    <value>lblDescripcion</value>
+  </data>
+  <data name="&gt;&gt;lblDescripcion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDescripcion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblDescripcion.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtDescripcionProductoNuevo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 207</value>
+  </data>
+  <data name="txtDescripcionProductoNuevo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 6, 5, 6</value>
+  </data>
+  <data name="txtDescripcionProductoNuevo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>923, 30</value>
+  </data>
+  <data name="txtDescripcionProductoNuevo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtDescripcionProductoNuevo.Name" xml:space="preserve">
+    <value>txtDescripcionProductoNuevo</value>
+  </data>
+  <data name="&gt;&gt;txtDescripcionProductoNuevo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDescripcionProductoNuevo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtDescripcionProductoNuevo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 19.8000011pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 42</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 0, 5, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 40</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>AGREGAR PRODUCTO NUEVO</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lstProductosNuevaVenta.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei, 14.25pt</value>
+  </data>
+  <data name="lstProductosNuevaVenta.ItemHeight" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="lstProductosNuevaVenta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 338</value>
+  </data>
+  <data name="lstProductosNuevaVenta.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 6, 5, 6</value>
+  </data>
+  <data name="lstProductosNuevaVenta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1318, 500</value>
+  </data>
+  <data name="lstProductosNuevaVenta.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lstProductosNuevaVenta.Name" xml:space="preserve">
+    <value>lstProductosNuevaVenta</value>
+  </data>
+  <data name="&gt;&gt;lstProductosNuevaVenta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstProductosNuevaVenta.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lstProductosNuevaVenta.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtPrecio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 285</value>
+  </data>
+  <data name="txtPrecio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 6, 5, 6</value>
+  </data>
+  <data name="txtPrecio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>923, 30</value>
+  </data>
+  <data name="txtPrecio.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtPrecio.Name" xml:space="preserve">
+    <value>txtPrecio</value>
+  </data>
+  <data name="&gt;&gt;txtPrecio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtPrecio.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtPrecio.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblPrecio.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblPrecio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 14.25pt</value>
+  </data>
+  <data name="lblPrecio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 284</value>
+  </data>
+  <data name="lblPrecio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 0, 5, 0</value>
+  </data>
+  <data name="lblPrecio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 29</value>
+  </data>
+  <data name="lblPrecio.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblPrecio.Text" xml:space="preserve">
+    <value>Precio</value>
+  </data>
+  <data name="&gt;&gt;lblPrecio.Name" xml:space="preserve">
+    <value>lblPrecio</value>
+  </data>
+  <data name="&gt;&gt;lblPrecio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPrecio.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblPrecio.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>10, 24</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1530, 895</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 12pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 6, 5, 6</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>NUEVO PRODUCTO</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>NuevoProducto</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
