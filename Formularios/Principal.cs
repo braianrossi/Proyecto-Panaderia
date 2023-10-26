@@ -75,5 +75,10 @@ namespace Proyecto_Panaderia
             ActualizarProducto act = new ActualizarProducto();
             act.Show();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -33,7 +33,7 @@ namespace Proyecto_Panaderia.Formularios.Ventas
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Esta cerrando la aplicacion", "SALIR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //MessageBox.Show("Esta cerrando la aplicacion", "SALIR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             Close();
         }
 
@@ -141,6 +141,11 @@ namespace Proyecto_Panaderia.Formularios.Ventas
             }
 
             return total;
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

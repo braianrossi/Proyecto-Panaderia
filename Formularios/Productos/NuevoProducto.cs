@@ -27,7 +27,7 @@ namespace Proyecto_Panaderia.Formularios
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Esta cerrando la aplicacion.", "SALIR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //MessageBox.Show("Esta cerrando la aplicacion.", "SALIR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             Close();
         }
 

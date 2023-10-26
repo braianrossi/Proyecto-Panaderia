@@ -90,7 +90,7 @@
             // 
             // lstProductosNuevaVenta
             // 
-            this.lstProductosNuevaVenta.BackColor = System.Drawing.Color.PapayaWhip;
+            this.lstProductosNuevaVenta.BackColor = System.Drawing.Color.AliceBlue;
             resources.ApplyResources(this.lstProductosNuevaVenta, "lstProductosNuevaVenta");
             this.lstProductosNuevaVenta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lstProductosNuevaVenta.FormattingEnabled = true;
@@ -123,8 +123,10 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAgregar);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "NuevoProducto";
+            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Load += new System.EventHandler(this.NuevoProducto_Load);
             this.ResumeLayout(false);
