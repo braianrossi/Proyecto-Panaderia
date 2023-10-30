@@ -154,7 +154,7 @@
     <value>Arial Narrow, 12pt</value>
   </data>
   <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1077, 347</value>
+    <value>1083, 391</value>
   </data>
   <data name="btnCancelar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -184,7 +184,7 @@
     <value>Arial Narrow, 12pt</value>
   </data>
   <data name="btnSalir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1077, 412</value>
+    <value>1083, 456</value>
   </data>
   <data name="btnSalir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
